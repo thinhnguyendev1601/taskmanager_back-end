@@ -1,0 +1,12 @@
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\controller\TestController.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\dto\LoginRequest.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\dto\LoginResponse.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\ActivityLog.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\Category.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\Tag.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\Task.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\TaskAssignment.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\TaskAttachment.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\entity\User.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\repository\UserRepo.java
+C:\Users\user\task-manager\src\main\java\com\taskmanagement\TaskApplication.java
