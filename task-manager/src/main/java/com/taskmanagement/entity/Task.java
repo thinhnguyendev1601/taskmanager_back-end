@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -68,6 +69,7 @@ public class Task {
     private User createdBy;
 
     @OneToMany(mappedBy = "task", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
     private Set<TaskAssignment> taskAssignments = new HashSet<>();
 
     @ManyToMany
@@ -76,13 +78,17 @@ public class Task {
             joinColumns = @JoinColumn(name = "task_id"),
             inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
+    @JsonIgnore
     private Set<Tag> tags = new HashSet<>();
 
     @OneToMany(mappedBy = "task", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<TaskAttachment> attachments = new HashSet<>();
 
     @OneToMany(mappedBy = "task", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<ActivityLog> activities = new HashSet<>();
+
 
     public enum TaskStatus {
         PENDING, TO_DO, IN_PROGRESS, DONE
